@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>CALCULATOR</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+	<div class="row justify-content-md-center" style="padding-top:100px;">
+		<div class="card border-danger" style="width:300px;">
+
+			<div class="card-header border-warning">
+				<div class="row">
+					<img src="Calculator1.png" style="height:50px;width:50px"></img>
+					<h1> Calculator</h1>
+				</div>
+			</div>
+
+		<div class="card-body">
+			<div class="row">
+				<input class="form-control" type="text" placeholder="Answer" readonly id="display">
+			</div>
+			<br>
+			<div class="row justify-content-md-around">
+				<button class="btn btn-outline-info col-md-3" type="reset" id="reset" onclick="return reset()">C</button>
+				<button class="btn btn-outline-info col-md-3"  id="back" onclick="return back()"><-</button>
+			</div>
+			<br>	
+			<div class="row justify-content-md-around">   
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="seven" onclick="return calc(7)">7</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="eight" onclick="return calc(8)">8</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="nine" onclick="return calc(9)">9</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="add" onclick="return calc('+')">+</button>
+			</div>
+			<br>
+			<div class="row justify-content-md-around">
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="four" onclick="return calc(4)">4</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="five" onclick="return calc(5)">5</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="six" onclick="return calc(6)">6</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="sub" onclick="return calc('-')">-</button>
+			</div>
+			<br>
+			<div class="row justify-content-md-around">
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="one" onclick="return calc(1)">1</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="two" onclick="return calc(2)">2</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="three" onclick="return calc(3)">3</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="mul" onclick="return calc('*')">x</button>
+			</div>
+			<br>
+			<div class="row justify-content-md-around">
+				<button type="button" class="btn btn-outline-success inputs col-md-2" id="equal" onclick="return equal()">=</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="zero" onclick="return calc(0)">0</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="point" onclick="return calc('.')">.</button>
+				<button type="button" class="btn btn-outline-primary inputs col-md-2" id="div" onclick="return calc('/')">/</button>
+			</div>		
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
